@@ -1,0 +1,19 @@
+// views/students.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        h1 Danh sách sinh viên
+        table
+            thead
+                tr
+                    td id
+                    td name
+            tbody
+                each sinhvien in sinhviens
+                    tr
+                        td= sinhvien.id
+                        td= sinhvien.name
